@@ -7,15 +7,18 @@
 
 import Foundation
 
-struct CategoryData {
-    let categoryArray : [CategoryFeatures] = []
+struct CategoryData: Codable {
+    let categoryArray : [CategoryFeatures]
     
     
     
-    struct CategoryFeatures {
-        let idCategory : String?
-        let strCategory : String?
-        let thumbCategory : String?
-        let descriptionCategory : String?
-    }
+    
+}
+
+
+struct CategoryFeatures: Codable {
+    let idCategory : String?
+    let strCategory : String?
+    let thumbCategory : String?
+    let descriptionCategory : String?
 }

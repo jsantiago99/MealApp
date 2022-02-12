@@ -8,8 +8,8 @@
 import Foundation
 
 struct CategoryModel {
-    let categoryId : String?
-    let categoryStr : String?
-    let categoryThumbnail : String?
-    let categoryDescription : String? 
+    var categoryModelArray : [CategoryModelFeatures] = []
 }
+
+
+

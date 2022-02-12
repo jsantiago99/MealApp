@@ -19,6 +19,7 @@
 		BF600E3327B82CF30021C9F1 /* CategoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF600E3227B82CF30021C9F1 /* CategoryManager.swift */; };
 		BF600E3527B836D80021C9F1 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF600E3427B836D80021C9F1 /* CategoryModel.swift */; };
 		BF600E3727B836E90021C9F1 /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF600E3627B836E90021C9F1 /* CategoryData.swift */; };
+		BF600E3A27B852D70021C9F1 /* CategoryFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF600E3927B852D70021C9F1 /* CategoryFeatures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		BF600E3227B82CF30021C9F1 /* CategoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryManager.swift; sourceTree = "<group>"; };
 		BF600E3427B836D80021C9F1 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		BF600E3627B836E90021C9F1 /* CategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
+		BF600E3927B852D70021C9F1 /* CategoryFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFeatures.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				BF600E3227B82CF30021C9F1 /* CategoryManager.swift */,
 				BF600E3427B836D80021C9F1 /* CategoryModel.swift */,
 				BF600E3627B836E90021C9F1 /* CategoryData.swift */,
+				BF600E3927B852D70021C9F1 /* CategoryFeatures.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				BF600E3727B836E90021C9F1 /* CategoryData.swift in Sources */,
 				BF1DB55B27B72FF3005FF58B /* AppDelegate.swift in Sources */,
 				BF600E3327B82CF30021C9F1 /* CategoryManager.swift in Sources */,
+				BF600E3A27B852D70021C9F1 /* CategoryFeatures.swift in Sources */,
 				BF600E3527B836D80021C9F1 /* CategoryModel.swift in Sources */,
 				BF1DB55D27B72FF3005FF58B /* SceneDelegate.swift in Sources */,
 			);
