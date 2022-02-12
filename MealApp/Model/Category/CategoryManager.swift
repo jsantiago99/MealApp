@@ -12,8 +12,8 @@ protocol CategoryManagerDelegate {
     func didUpdateCategory(_ categoryManager: CategoryManager, category: CategoryModel)
 }
 struct CategoryManager {
-    let baseURL = "www.themealdb.com/api/json/v1/1/categories.php"
-    let currencyArray: [String] = []
+    let baseURL = "https://www.themealdb.com/api/json/v1/1/categories.php"
+    var currentArray: [String] = []
     var delegate: CategoryManagerDelegate?
     
     func fetchCategories() {
@@ -46,20 +46,23 @@ struct CategoryManager {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode(CategoryData.self, from: data)
-            let array = decodedData.categoryArray
+            let array = decodedData.categories
             var categoryModel = CategoryModel()
             
           
             for item in array {
                 let id = item.idCategory
                 let str = item.strCategory
-                let thumb = item.thumbCategory
-                let description = item.descriptionCategory
+                let thumb = item.strCategoryThumb
+                let description = item.strCategoryDescription
                 
+            
                 let categoryFeatures = CategoryModelFeatures(categoryId: id, categoryStr: str, categoryThumbnail: thumb, categoryDescription: description)
                 
                 categoryModel.categoryModelArray.append(categoryFeatures)
             }
+            
+           
             
             return categoryModel
             
@@ -73,6 +76,11 @@ struct CategoryManager {
         
         
     }
+    
+    
+    mutating func add(strName: String) {
+        currentArray.append(strName)
+      }
     
     
 }

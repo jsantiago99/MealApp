@@ -32,17 +32,20 @@
                                 </buttonConfiguration>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mRU-wA-ofk">
-                                <rect key="frame" x="0.0" y="346" width="414" height="162"/>
+                                <rect key="frame" x="0.0" y="307" width="414" height="325"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
+                    <connections>
+                        <outlet property="categoryPicker" destination="mRU-wA-ofk" id="fzX-L3-QEV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-390" y="113"/>
+            <point key="canvasLocation" x="-391.304347826087" y="112.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PGT-t1-8Lf">

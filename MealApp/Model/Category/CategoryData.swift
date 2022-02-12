@@ -8,8 +8,11 @@
 import Foundation
 
 struct CategoryData: Codable {
-    let categoryArray : [CategoryFeatures]
-    
+    let categories : [CategoryFeatures]
+//    let idCategory : String?
+//    let strCategory : String?
+//    let thumbCategory : String?
+//    let descriptionCategory : String?
     
     
     
@@ -19,6 +22,6 @@ struct CategoryData: Codable {
 struct CategoryFeatures: Codable {
     let idCategory : String?
     let strCategory : String?
-    let thumbCategory : String?
-    let descriptionCategory : String?
+    let strCategoryThumb : String?
+    let strCategoryDescription : String?
 }
